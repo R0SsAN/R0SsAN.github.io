@@ -5,17 +5,17 @@
         <meta charset="utf-8">
         <style>
             .elenco{
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 20px;
+                font-size: 25px;
                 margin-left: 5%;
+                font-family: sans-serif;
+                color:rgb(0, 0, 0);
             }
             .titolo{
-                margin-left: 5%;
-                font-family: Arial, Helvetica, sans-serif;
-                color:navy;
-            }
-            .sfondo{
-                background-color: rgb(255, 230, 179);
+                margin-left: 8%;
+                font-size: 3em;
+                font-family: fantasy;
+                color:rgb(183, 211, 243);
+                text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
             }
             .center{
                 display: block;
@@ -25,25 +25,51 @@
             li{
                  margin: 5px;
             }
-
+            a{
+                color:rgb(22, 31, 71);
+            }
+            body {
+                background: linear-gradient(-45deg,#faf757, #ee7752, #eb7ca6, #23a6d5, #23d5ab);
+                background-size: 500% 500%;
+                animation: gradient 20s ease infinite;
+            }
+            @keyframes gradient {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+                100% {
+                    background-position: 0% 50%;
+                }
+            }
         </style>
     </head>
 
-    <body class="sfondo">
+    <body>
         <img src="Image/titolo.png" class="center">
         <br><br>
-        <h2 class="titolo">Elenco esercizi:</h1>
-        <ol class="elenco">
-            <li><a href="KhanAccademy/Docs/Sfida Un perfetto viaggio con le immagini.html">(KhanAccademy) Sfida Un perfetto viaggio con le immagini</a></li>
-            <li><a href="KhanAccademy/Docs/Sfida Saltare intorno.html">(KhanAccademy) Sfida Saltare intorno</a></li>
-            <li><a href="KhanAccademy/Docs/Progetto Libro di ricette.html">(KhanAccademy) Progetto Libro di ricette</a></li>
-            <li><a href="KhanAccademy/Docs/Pagina web sui viaggi.html">(KhanAccademy) Pagina web sui viaggi</a></li>
-            <li><a href="KhanAccademy/Docs/Progetto Blog.html">(KhanAccademy) Progetto Blog</a></li>
+        
+        <div style="float:left;width:49%;">
+            <h1 class="titolo">ELENCO ESERCIZI TEORIA:</h1>
+            <ul class="elenco">
+                <li><a href="KhanAccademy/Docs/Sfida Un perfetto viaggio con le immagini.html">(KhanAccademy) Sfida Un perfetto viaggio con le immagini</a></li>
+                <li><a href="KhanAccademy/Docs/Sfida Saltare intorno.html">(KhanAccademy) Sfida Saltare intorno</a></li>
+                <li><a href="KhanAccademy/Docs/Progetto Libro di ricette.html">(KhanAccademy) Progetto Libro di ricette</a></li>
+                <li><a href="KhanAccademy/Docs/Pagina web sui viaggi.html">(KhanAccademy) Pagina web sui viaggi</a></li>
+                <li><a href="KhanAccademy/Docs/Progetto Blog.html">(KhanAccademy) Progetto Blog</a></li>
+                
+            </ul>
+        </div>
 
+        <div style="float:left;width:49%;">
+            <h1 class="titolo">ELENCO ESERCIZI LABORATORIO:</h1>
+            <ul class="elenco">
+                <li><a href="ese_influencer/Docs/index.html">Esercizio influencer</a></li>
 
-            <li><a href="ese_influencer/Docs/index.html">Esercizio influencer</a></li>
-        </ol>
-
+            </ul>
+        </div>
     
     </body>
 </html>

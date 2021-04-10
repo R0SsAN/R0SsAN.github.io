@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Esempio bottone</title>
+
+        <script type="text/javascript">
+            function controlla(form)
+            {
+                if(form.r1.checked)
+                    var risposta="Esatta";
+                else
+                    var risposta="Errata";
+                    document.getElementById("esito").innerHTML=risposta;
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <form>
+            <fieldset>
+                <legend>
+                    quanto fa 2+2?
+                </legend>
+                <p><input type="radio" name="risp" id="r1">quattro</p>
+                <p><input type="radio" name="risp" id="r2">tre</p>
+                <p><input type="radio" name="risp" id="r3">cinque</p>
+                <p><input type="radio" name="risp" id="r4">sette</p>
+            </fieldset>
+            <p><input type="button" id="invia" value="invia" onclick="controlla(this.form)"></p>
+            <p><input type="reset" id="annulla" value="annulla"></p>
+            <p id="esito"></p>
+            
+        </form>
+
+    </body>
+</html>
