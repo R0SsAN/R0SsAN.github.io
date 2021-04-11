@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Esempio bottone</title>
+        <style>
+            body{
+                background-color: rgb(248, 207, 152);
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+            .testo{
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+        </style>
+        <script src="../JS/script.js"></script>
+
+    </head>
+
+    <body>
+        <form>
+            <label for="volume">Inserisci volume:</label>
+            <input type="text" name="volume" id="volume" class="testo">
+
+            <br><br>
+
+            <label for="volume">Scegli materiale:</label>
+            <select name="materiale" id="materiale" class="testo">
+                <option value="acciaio">Acciaio</option>
+                <option value="ottone">Ottone</option>
+                <option value="alluminio">Alluminio</option>
+                <option value="rame">Rame</option>
+            </select>
+
+            <br><br>
+
+            <input type="button" name="calcola" id="calcola" value="Calcola peso" class="testo" onclick="calcolaPeso()">
+            <input type="reset" name="cancella" id="cancella" value="Cancella valori" class="testo" onclick="resetPeso()">
+            <br>
+
+            <p id="risultato"></p>
+        </form>
+
+    </body>
