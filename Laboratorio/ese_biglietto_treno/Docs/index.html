@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Esercizio biglietto treno</title>
+        <style>
+            body{
+                background-color: rgb(178, 240, 120);
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+            .testo{
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+        </style>
+        <script src="../JS/script.js"></script>
+
+    </head>
+
+    <body>
+        <form>
+            <p>Inserisci kilometri:
+            <input type="number" min="0" id="km" class="testo"></p>
+
+
+            <p>Seleziona classe:<br>
+            <input type="radio" id="c1" name="classe">Classe 1<br>
+            <input type="radio" id="c2" name="classe">Classe 2
+            </p>
+
+
+            <p>Seleziona numero persone: 
+            <select id="nPersone" class="testo">
+                <option value="1">1 Persona</option>
+                <option value="2">2 Persone</option>
+                <option value="3">3 Persone</option>
+                <option value="4">4 Persone</option>
+                <option value="5">5 Persone</option>
+                <option value="6">6 Persone</option>
+            </select>
+            </p>
+
+            <input type="button" id="calcola" value="Calcola prezzo" class="testo" onclick="calcolaPrezzo()">
+
+            <br>
+
+            <p id="risultato"></p>
+        </form>
+    </body>
