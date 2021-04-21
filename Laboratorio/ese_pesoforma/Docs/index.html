@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Esercizio peso forma</title>
+        <style>
+            body{
+                background-color: rgb(178, 240, 120);
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+            .testo{
+                font-family: sans-serif;
+                font-size: 20px;
+            }
+            table, th, td {     
+                border: 2px solid black;
+                text-align:center;
+                border-collapse:collapse;
+                padding:12px;
+            }
+            h1{
+                color:crimson;
+            }
+        </style>
+        <script src="../JS/script.js">
+        </script>
+
+    </head>
+
+    <body>
+        <form>
+            <h1>Calcolo peso forma</h1>
+
+            <p>La tua altezza:&emsp;
+            <input type="number" id="altezza" class="testo" min="100" max="220">
+            cm
+            </p>
+            <p>Il tuo sesso:&emsp;
+            <select id="sesso" class="testo">
+                    <option value="maschio">Maschio</option>
+                    <option value="femmina">Femmina</option>
+            </select>
+            </p>
+            <p>La tua età:&emsp;
+            <input type="number" id="eta" class="testo" min="0" max="120">
+            anni
+            </p>
+            <p>Il tuo peso:&emsp;
+            <input type="number" id="peso" class="testo" min="20" max="300">
+            Kg
+            </p>
+            <br>
+            <input type="button" class="testo" id="calcola" value="Calcola peso forma" onclick="calcolaPesi()">
+            <input type="reset" class="testo" value="Resetta i campi">
+            <br><br>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>Formula di Lorenz</td>
+                        <td>PESO FORMA:<a id="lorenz"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Formula di Broca</td>
+                        <td>PESO FORMA:<a id="broca"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Formula di Wan der Vael</td>
+                        <td>PESO FORMA:<a id="wan"></a></td>
+                    </tr>
+                    <tr>
+                        <td>BMI</td>
+                        <td>INDICE MASSA CORPOREA:<a id="bmi"></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+
+    </body>
+</html>

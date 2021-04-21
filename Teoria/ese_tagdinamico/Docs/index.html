@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TIM Super Fibra</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="../JS/script.js"></script>
+    </head>
+ 
+    <body onload="inizializzaSelection()">
+        <div class="logo">
+            <img src="../Images/logo.png" class="center" width="300">
+        </div>
+        <br>
+        <div class="divOfferta">
+            <h1 class="nomeOfferta">TIM SUPER FIBRA <img src="../Images/fibra.png" width="40"> </h1>
+            <ul class="descrizioneOfferta">
+                <li><strong>Fibra fino a 1 GIGA</strong>: Connetti la tua casa con la Fibra fino a 1 Giga in download e 100 Mega in upload.</li>
+                <li><strong>Modem TIM HUB+</strong>: Il primo modem in Italia con il Wi-Fi 6, maggiore velocità e copertura in tutta casa.</li>
+                <li><strong>Chiamate illimitate</strong>: La promo online chiamate illimitate incluse ha una durata di 24 mesi, se si decide di mantenere l’offerta si beneficia di altri 24 mesi di gratuità delle chiamate illimitate. Al termine dei 48 mesi l’opzione Voce avrà un costo di 5€/mese, l’offerta manterrà comunque il costo complessivo di 29,90€..</li>
+                <li><strong>Contributo di attivazione</strong>: GIÁ INCLUSO, 10€ al mese per 24 mesi (240€).</li>
+            </ul>
+            <br>
+            <div class="divInputDati">
+                <h2 style="text-align: center;font-family: sans-serif;">Inserisci i dati</h2>
+                <table class="testo">
+                    <tr>
+                        <td>Nome: </td>
+                        <td><input type="text" id="nome" class="testo"></td>
+                    </tr>
+                    <tr>
+                        <td>Cognome: </td>
+                        <td><input type="text" id="cognome" class="testo"></td>
+                    </tr>
+                    <tr>
+                        <td>Luogo di nascita: </td>
+                        <td><input type="text" id="luogoNascita" class="testo"></td>
+                    </tr>
+                    <tr>
+                        <td>Data di nascita: </td>
+                        <td><input type="date" id="dataNascita" class="testo"></td>
+                    </tr>
+                    <tr>
+                        <td>Sesso: </td>
+                        <td>
+                            <select class="testo" id="sesso">
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Colore degli occhi: </td>
+                        <td>
+                            <select class="testo" id="occhi">
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Provincia di residenza: </td>
+                        <td>
+                            <select class="testo" id="provincia">
+                            </select>
+                        </td>
+                    </tr>
+                </table>
+                <input type="button" id="attivaOfferta" value="Attiva l'offerta!" class="bottone" onclick="attivaOfferta()">
+            </div>
+        </div>
+    
+    </body>
+</html>

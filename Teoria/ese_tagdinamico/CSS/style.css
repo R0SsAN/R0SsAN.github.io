@@ -1,0 +1,59 @@
+body{
+    background-color: lightblue;
+}
+li{
+    margin:5px;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo{
+    margin:20px;
+}
+.divOfferta{
+    margin-left:50px;
+    margin-right:50px;
+    border: 2px solid green;
+    padding: 10px;
+    background-color: lightgray;
+}
+.nomeOfferta{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 38px;
+    color:rgb(194, 11, 11);
+}
+.descrizioneOfferta{
+    font-family: sans-serif;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+}
+.divInputDati{
+    margin-left:31%;
+    margin-right:31%;
+    border: 2px solid rgb(2, 50, 206);
+    padding: 15px;
+    background-color: lightsteelblue;
+}
+.testo{
+    font-family: sans-serif;
+    font-size: 20px;
+    color:rgb(0, 0, 0);
+}
+td, th {
+    padding:10px;
+}
+.bottone{
+    background-color: lightseagreen;
+    font-family: sans-serif;
+    font-size: 23px;
+    color:rgb(0, 0, 0);
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}

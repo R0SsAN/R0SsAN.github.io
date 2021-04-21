@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Esercitazione Javascript</title>
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="../JS/script.js">
+        </script>
+
+    </head>
+
+    <body onload="caricaVettore()">
+        <div id="inserimentoDati">
+            <h3>Dati anagrafici:</h3>
+            <table class="testo">
+                <tr>
+                    <td>Cognome: </td>
+                    <td><input type="text" id="cognome" class="testo"></td>
+                </tr>
+                <tr>
+                    <td>Nome: </td>
+                    <td><input type="text" id="nome" class="testo"></td>
+                </tr>
+            </table>
+            <h3>Data di nascita:</h3>
+            <p class="testo">Giorno:&nbsp;<input type="number" id="giorno" class="testo" min="1" max="31" value="1">&nbsp;&nbsp;Mese:&nbsp;
+                <select id="mese" class="testo">
+                    <option value="gen">Gennaio</option>
+                    <option value="feb">Febbraio</option>
+                    <option value="mar">Marzo</option>
+                    <option value="apr">Aprile</option>
+                    <option value="mag">Maggio</option>
+                    <option value="giu">Giugno</option>
+                    <option value="lug">Luglio</option>
+                    <option value="ago">Agosto</option>
+                    <option value="set">Settembre</option>
+                    <option value="ott">Ottobre</option>
+                    <option value="nov">Novembre</option>
+                    <option value="dic">Dicembre</option>
+                </select>
+                &nbsp;&nbsp;
+                Anno:&nbsp;<input type="number" id="anno" min="1940" max="2021" class="testo" value="2020">
+            </p>
+        </div>
+        <div id="domande" class="testo">
+            <fieldset>
+                <legend>
+                    Domande
+                </legend>
+                <p>Quale è il linguaggio di programmazione uilizzato per creare e modificare i database? (in maiuscolo)<br>
+                <input type="text" id="linguaggio" class="testo"></p>
+                <p>Quanti valori può assumere una variabile booleana?<br>
+                <select id="valori" class="testo">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>4</option>
+                    <option>256</option>
+                </select>
+                </p>
+                <p>Quali sono le librerie caricate a run-time?<br>
+                <input type="radio" name="risp" id="r1">Statiche<br>
+                <input type="radio" name="risp" id="r2">Dinamiche
+                </p>
+                <p>Quali tra queste sono parole chiave in C++?<br>
+                    <input type="checkbox" id="c1">Void<br>
+                    <input type="checkbox" id="c2">Integer<br>
+                    <input type="checkbox" id="c3">Char<br>
+                </p>
+                <p>8 Bit corrispondono a un...<br>
+                    <input type="text" id="bit" class="testo">
+                </p>
+            </fieldset>
+            <br>
+            <input type="button" id="elabora" class="testo" value="Elabora" onclick="elabora()">
+            &nbsp;
+            <input type="reset" id="reset" class="testo" value="Cancella" onclick="reset()">
+        </div>
+        <br>
+        <div id="esito">
+            <fieldset class="fEsito">
+                <legend>
+                    Esito
+                </legend>
+                <p>Punteggio: &nbsp;
+                    <label id="punteggio">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                </p>
+                
+            </fieldset>
+            &nbsp; &nbsp;
+            <input type="button" class="testo" value="Utente con punteggio" id="utente" onclick="generaCodice()">
+            &nbsp;
+            <label id="utente_punteggio">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        </div>
+
+
+    </body>
+</html>
