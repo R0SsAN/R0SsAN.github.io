@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="utf-8">
+    <title>Canvas esempio</title>
+
+    <style>
+        .logo{
+            background-color: lightgrey;
+            width:600px;
+            height:350px;
+        }
+        .prova{
+            color:red;
+            font-family: sans-serif;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function creaFigura() {
+            mioCanvas = document.getElementById("myCanvas");
+            ctx = mioCanvas.getContext("2d");
+
+            ctx.beginPath();
+            ctx.arc(125, 125, 70, 0, 2*Math.PI);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "blue";
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(280, 125, 70, 0, 2*Math.PI);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "black";
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(435, 125, 70, 0, 2*Math.PI);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "red";
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(202, 200, 70, 0, 2*Math.PI);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "yellow";
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(357, 200, 70, 0, 2*Math.PI);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "green";
+            ctx.stroke();
+        }
+    </script>
+</head>
+<body style="background-color: lightgreen;">
+    <h1 class="prova">Olimpiadi</h1>
+    <form>
+        <input type="button" id="ok" value="Disegna" onclick="creaFigura()">
+    </form>
+    <br>
+    <div class="logo">
+        <canvas id="myCanvas" width="600" height="350" style="border:1px solid red;">
+            Your browser does not support the html canvas
+        </canvas>
+    </div>
+</body>
+</html>
