@@ -1,0 +1,144 @@
+/* CSS per sfondo colorato */
+body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 100vh;
+
+    margin:0px;
+    background: linear-gradient(-45deg, #afd2e9, #2c51b6,#2c51b6, #afd2e9);
+    background-size: 500% 500%;
+    animation: gradient 7s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+a{
+    text-decoration: none;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+/* CSS per tabelle */
+table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: rgba(255,255,255,0.7);
+    border-radius: 15px;
+    width:42%;
+    margin: 0 auto;
+    overflow: hidden;
+    float:left;
+}
+tr {
+    height: 50px;
+}
+thead tr {
+    height: 60px;
+    background:rgba(41, 160, 207, 0.8);
+}
+td{
+    font-family:Tahoma;
+    border-bottom:1px solid rgb(163, 163, 163);
+    padding-left:13px;
+    padding-right:20px;
+}
+th{
+    text-align:left;
+    padding-left: 20px;
+    margin-left: 8%;
+    font-size: 2em;
+    font-family: fantasy;
+    color: rgb(183, 211, 243);
+    text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+    border-bottom:1px solid black;
+}
+a{
+    color:black;
+}
+/* CSS per bottoni nella tabella */
+.button {
+    display: inline-block;
+    margin-top:5px;
+    padding: 0.6rem 1.1rem;
+    border-radius: 10rem;
+    color: #fff;
+    font-family:Helvetica;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    
+ }
+.button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(78, 137, 226);
+    border-radius: 10rem;
+    z-index: -2;
+}
+.button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #1053cf;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+    }
+.button:hover {
+    color: #fff;
+}
+.button:hover:before {
+    width: 100%;
+}
+/* CSS per footer */
+footer{
+    margin-top: auto;
+
+    overflow:hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color:#1c286d;
+    color:#e7e7e7;
+    font-family:Tahoma;
+}
+footer .social {
+    text-align:center;
+    padding-bottom:15px;
+}
+footer .social > a:hover {
+    opacity:0.9;
+}
+footer .copyright {
+    margin-top:7px;
+    text-align:center;
+    font-size:15px;
+    color:#aaa;
+    margin-bottom:0;
+}
