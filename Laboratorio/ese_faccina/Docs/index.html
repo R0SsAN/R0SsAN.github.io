@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <meta charset="utf-8">
+    <title>Canvas esempio</title>
+
+    <style>
+        .logo{
+            background-color: lightgrey;
+            width:600px;
+            height:350px;
+        }
+        .prova{
+            color:red;
+            font-family: sans-serif;
+        }
+    </style>
+
+    <script type="text/javascript">
+        function creaFigura() {
+            mioCanvas = document.getElementById("myCanvas");
+            ctx = mioCanvas.getContext("2d");
+
+            ctx.beginPath();
+            ctx.arc(275, 175, 130, 0, 2*Math.PI);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "black";
+            ctx.fillStyle="yellow";
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(220, 115, 30, 0, 2*Math.PI);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "black";
+            ctx.fillStyle="black";
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(325, 115, 30, 0, 2*Math.PI);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "black";
+            ctx.fillStyle="black";
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(220, 115, 7, 0, 2*Math.PI);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "white";
+            ctx.fillStyle="white";
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(325, 115, 7, 0, 2*Math.PI);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "white";
+            ctx.fillStyle="white";
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(325, 115, 7, 0, 2*Math.PI);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "white";
+            ctx.fillStyle="white";
+            ctx.fill();
+            ctx.stroke();
+
+            ctx.beginPath();
+            ctx.arc(272, 220, 40, 0, Math.PI);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "red";
+            ctx.fillStyle="red";
+            ctx.fill();
+            ctx.stroke();
+        }
+    </script>
+</head>
+<body style="background-color: lightgreen;">
+    <h1 class="prova">Olimpiadi</h1>
+    <form>
+        <input type="button" id="ok" value="Disegna" onclick="creaFigura()">
+    </form>
+    <br>
+    <div class="logo">
+        <canvas id="myCanvas" width="600" height="350" style="border:1px solid red;">
+            Your browser does not support the html canvas
+        </canvas>
+    </div>
+</body>
+</html>

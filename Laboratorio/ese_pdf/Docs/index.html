@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js"></script>
+    <script src="../JS/script.js"></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Creare PDF</title>
+</head>
+<body>
+    <h1>Creare un PDF CON Javascript</h1>
+    <form>
+        <p>Nome: &nbsp;&nbsp;<input type="text" id="nome">
+        </p>
+        <p>Cognome: &nbsp;&nbsp;<input type="text" id="cognome">
+        </p>
+        <p>Data di nascita: &nbsp;&nbsp;<input type="date" id="data">
+        </p>
+        <p>Testo: <br><input type="text" id="testo" style="width:200px;height: 200px;">
+        </p>
+        <p>Indirizzo immagine: <br><input type="text" id="indirizzo">
+        </p>
+        <input type="button" value="Crea il pdf" id="creapdf" onclick="creaPdf()">
+    </form>
+</body>
+</html>

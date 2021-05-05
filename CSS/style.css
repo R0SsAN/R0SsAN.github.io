@@ -2,7 +2,6 @@
 body {
     display: flex;
     flex-direction: column;
-    flex: 1;
     min-height: 100vh;
 
     margin:0px;
@@ -25,6 +24,7 @@ body {
 }
 a{
     text-decoration: none;
+    color:black;
 }
 
 .center {
@@ -69,9 +69,6 @@ th{
     text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
     border-bottom:1px solid black;
 }
-a{
-    color:black;
-}
 /* CSS per bottoni nella tabella */
 .button {
     display: inline-block;
@@ -85,7 +82,7 @@ a{
     transition: all 0.3s;
     position: relative;
     overflow: hidden;
-    z-index: 1;
+    z-index: 1; /*indica la posizione di "supremazia", piu' il numero e' alto e piu' stara' davanti agli altri elementi*/
     
  }
 .button:after {
@@ -109,7 +106,7 @@ a{
     background-color: #1053cf;
     transition: all 0.3s;
     border-radius: 10rem;
-    z-index: -1;
+    z-index: -1; 
     }
 .button:hover {
     color: #fff;
@@ -120,7 +117,6 @@ a{
 /* CSS per footer */
 footer{
     margin-top: auto;
-
     overflow:hidden;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -133,7 +129,7 @@ footer .social {
     padding-bottom:15px;
 }
 footer .social > a:hover {
-    opacity:0.9;
+    opacity:0.6;
 }
 footer .copyright {
     margin-top:7px;
