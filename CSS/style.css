@@ -34,10 +34,16 @@ a{
 }
 .logo{
     background-color: rgba(255, 255, 255, 0.4);
+    opacity:0.2;
+    animation: opaco 1s forwards;
+}
+@keyframes opaco{
+    to{
+        opacity: 1;
+    }
 }
 /* CSS per tabelle */
 table {
-    border-spacing: 1;
     border-collapse: collapse;
     background: rgba(255,255,255,0.7);
     border-radius: 15px;
@@ -45,7 +51,16 @@ table {
     margin: 0 auto;
     overflow: hidden;
     float:left;
+
+    transform: scale(0.2,0.2);
+    animation: slide 0.5s forwards;
 }
+@keyframes slide {
+    to {
+      opacity: 1;
+      transform: scale(1,1);
+    }
+  }
 tr {
     height: 50px;
 }
@@ -82,7 +97,7 @@ th{
     transition: all 0.3s;
     position: relative;
     overflow: hidden;
-    z-index: 1; /*indica la posizione di "supremazia", piu' il numero e' alto e piu' stara' davanti agli altri elementi*/
+    z-index: 1; /*indica la posizione di "profondità", piu' il numero e' alto e piu' stara' davanti agli altri elementi*/
     
  }
 .button:after {

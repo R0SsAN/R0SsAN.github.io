@@ -11,7 +11,7 @@ function creaPdf()
     temp=document.getElementById("testo").value;
     doc.text(20,50,"Quello che voglio scrivere è:"+temp);
 
-    doc.addImage(document.getElementById("indirizzo").value, "JPEG", 15, 60, 90, 90);
+   doc.addImage(document.getElementById("indirizzo").value, "JPEG", 15, 60, 90, 90);
 
     doc.save("prova.pdf");
 }

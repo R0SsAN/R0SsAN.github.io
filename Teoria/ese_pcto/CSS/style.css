@@ -66,3 +66,9 @@ a{
     color:rgb(133, 46, 46);
     font-weight: bold;
 }
+h1{
+    margin-left:3%;
+    font-family: sans-serif;
+    color:rgb(196, 31, 31);
+    font-size: 50px;
+}
