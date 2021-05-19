@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verifica Luca Rossini</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/script.js"></script>
+</head>
+<body>
+    <form>
+        <p>
+            Dati Anagrafici:<br>
+            Cognome: <input type="text" id="cognome"> &nbsp;&nbsp;
+            Nome: <input type="text" id="nome">
+        </p>
+        <br>
+        <p>
+            Data di Nascita:<br>
+            Giorno: <input type="text" id="giorno"> &nbsp;&nbsp;
+            Mese: 
+            <select  id="mese">
+                <option value="01">GEN</option>
+                <option value="02">FEB</option>
+                <option value="03">MAR</option>
+                <option value="04">APR</option>
+                <option value="05">MAG</option>
+                <option value="06">GIU</option>
+                <option value="07">LUG</option>
+                <option value="08">AGO</option>
+                <option value="09">SET</option>
+                <option value="10">OTT</option>
+                <option value="11">NOV</option>
+                <option value="12">DIC</option>
+            </select> &nbsp;&nbsp;
+            Anno; <input type="text" id="anno">
+        </p>
+        <br>
+        <fieldset>
+            <legend>Domande</legend>
+            <p>Qual è il linguaggio diprogrammazione utilizzato per creare e modificare i database? (in maiuscolo)
+                <br>
+                <input type="text" id="linguaggio">
+            </p>
+            <p>Quanti valori può assumere una variabile booleana?<br>
+                <select id="valori">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="4">4</option>
+                    <option value="256">256</option>
+                </select>
+            </p>
+            <p>Quali sono le librerie caricate a run-time?<br>
+                <input type="radio" name="librerie" id="statiche">Statiche
+                <br>
+                <input type="radio" name="librerie" id="dinamiche">Dinamiche
+            </p>
+            <p>Quali tra queste sono le parole chiave in C++?<br>
+                <input type="checkbox" id="void">void
+                <br>
+                <input type="checkbox" id="integer">integer
+                <br>   
+                <input type="checkbox" id="char">char
+            </p>
+            <p>8 Bit corrispondono a un... <br>
+                <input type="text" id="bit">
+            </p>
+        </fieldset>
+        <br>
+        <input type="button" id="elabora" onclick="elabora_testo()" value="Elabora">
+        <input type="reset" id="cancella" onclick="cancella()" value="Cancella">
+        <br><br>
+        <fieldset id="f-punteggio">
+            <legend>Esito</legend>
+            <p>Punteggio:
+                <a id="punteggio">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</a>
+            </p>
+        </fieldset>
+        <div id="div-punteggio">
+            <input type="button" id="utente-punteggio" value="Utente con punteggio" onclick="calcolaUtentePunteggio()">
+            &nbsp;
+            <a id="punteggio-utente">⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</a>
+        </div>
+
+    </form>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,18 @@
+#elabora, #cancella{
+    float:left;
+}
+#f-punteggio{
+    float:left;
+    width:20%;
+}
+#div-punteggio{
+    float:left;
+    margin-left:20%;
+    margin-top:40px;
+}
+#punteggio{
+    border:1px solid black;
+}
+#punteggio-utente{
+    border:1px solid black;
+}

@@ -1,0 +1,38 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: lightblue;
+}
+h1{
+    text-align: center;
+}
+.container{
+    border:3px dashed black;
+    padding:30px;
+    margin:5%;
+    background-color: lightgreen
+    ;
+}
+table,td,th{
+    border:1px solid black;
+    border-collapse: collapse;
+    background-color: lightskyblue;
+    padding:8px;
+}
+table{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+th{
+    background-color: lightseagreen;
+}
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
+canvas{
+    background-color: rgb(168, 255, 222);
+    padding: 20px;
+    border:2px solid blue;
+}
